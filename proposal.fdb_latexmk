@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1687534176 "/Users/blira/Library/CloudStorage/GoogleDrive-blira@sas.upenn.edu/My Drive/0 | Research/gpt_coding/proposal.tex" "proposal.pdf" "proposal" 1687534178 0
-  "/Users/blira/Library/CloudStorage/GoogleDrive-blira@sas.upenn.edu/My Drive/0 | Research/gpt_coding/proposal.tex" 1687534167 17196 d132df70c8c2ce450cea0e1fe0e3167d ""
+["pdflatex"] 1687534565 "/Users/blira/Library/CloudStorage/GoogleDrive-blira@sas.upenn.edu/My Drive/0 | Research/gpt_coding/proposal.tex" "proposal.pdf" "proposal" 1687534567 0
+  "/Users/blira/Library/CloudStorage/GoogleDrive-blira@sas.upenn.edu/My Drive/0 | Research/gpt_coding/proposal.tex" 1687534555 17196 f94d29f77663d8139d45d1587ed614eb ""
   "/usr/local/Cellar/texlive/20230313/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1678549815 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/Cellar/texlive/20230313/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1678549815 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/Cellar/texlive/20230313/share/texmf-dist/fonts/map/fontname/texfonts.map" 1678549815 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -215,8 +215,8 @@
   "/usr/local/Cellar/texlive/20230313/share/texmf-dist/tex/latex/xurl/xurl.sty" 1678549815 4675 e4b8c405820368c2dfb03526e16d725a ""
   "/usr/local/Cellar/texlive/20230313/share/texmf-dist/web2c/texmf.cnf" 1685042120 40748 4081c8bc921e56c865f975bd762e388c ""
   "/usr/local/Cellar/texlive/20230313/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1678549815 7883974 374d6b5b24a851314cb6e1f570385f8f ""
-  "proposal.aux" 1687534178 5798 5ef388fdc3ef688efca5c95dec2a6ae0 "pdflatex"
-  "proposal.tex" 1687534167 17196 d132df70c8c2ce450cea0e1fe0e3167d ""
+  "proposal.aux" 1687534566 5798 5ef388fdc3ef688efca5c95dec2a6ae0 "pdflatex"
+  "proposal.tex" 1687534555 17196 f94d29f77663d8139d45d1587ed614eb ""
   (generated)
   "proposal.aux"
   "proposal.log"
