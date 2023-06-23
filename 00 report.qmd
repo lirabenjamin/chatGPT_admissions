@@ -1,6 +1,6 @@
 ---
 title: "Large Language Models make human coding in the social sciences obsolete"
-format: html
+format: pdf
 fig-cap-location: top
 editor: visual
 abstract: Scientific progress in the social sciences has relied, among other tools, on trained raters reading text and categorizing it. We argue that advances in natural language processing, especially the advent of large language models have made this practice obsolete. We show how repeated automatic ratings compared to content expert and externally valid expert ratings of personal qualities in college admissions. Compared to human raters, machine ratings can be more reliable, and orders of magnitude cheaper and faster than human raters. We offer recommendations on how to optimally do this, and provide an R package and tutorial for LLM coding.

@@ -1,0 +1,119 @@
+---
+title: "Third Year Paper Proposal"
+subtitle: "Large Language Models make human coding in the social sciences obsolete"
+format: pdf
+fontfamily: mathpazo
+fig-cap-location: top
+table-cap-location: bottom
+editor: visual
+fontsize: 10pt
+linestretch: 1
+# abstract: Scientific progress in the social sciences has relied, among other tools, on trained raters reading text and categorizing it. We argue that advances in natural language processing, especially the advent of large language models have made this practice obsolete. We show how repeated automatic ratings compared to content expert and externally valid expert ratings of personal qualities in college admissions. Compared to human raters, machine ratings can be more reliable, and orders of magnitude cheaper and faster than human raters. We offer recommendations on how to optimally do this, and provide an R package and tutorial for LLM coding.
+author: Benjamin Lira
+#author: Benjamin Lira, Asaf Mazar, Ben Manning, Chayce Baldwin, Lyle Ungar, David Yeager, James Gross, and Angela Duckworth
+bibliography: references.bib
+link-citations: true
+csl: apa-numeric-superscript.csl
+keep-tex: true
+---
+
+# GAP in knowledge
+
+Few of the available papers have outcomes, so they are only evaluated on how well they match the humans
+
+Humans are turkers, easy to beat
+
+Constructs are not complex psychological phenomena (e.g., personality, emotions, etc. as opposed to sentiment)
+
+No data on demographics, so what about bias
+
+What about other languages
+
+Existing tests on publicly available benchmarks may be affected by contamination, that is the tests might be included in the training data for these models [@pangakis].
+
+# Research Questions
+
+## Quality of ratings
+
+## Ratings and Demographics
+
+## Predictiveness of Ratings
+
+-   Does few shot performance produce better results than zero shot performance?
+
+## Ancilliary Questions
+
+-   Does few shot performance produce better results than zero shot performance?
+-   How does GPT-4, GPT-3.5, and open source models compare
+-   What effect does temperature have on rating quality
+-   What effect does aggregating multiple ratings have on quality
+
+# Methods
+
+| Tables   |      Are      |  Cool |
+|----------|-------------|------|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+: Fruit prices {tbl-colwidths="[50,25,25]"}
+
+
+# Reading List
+
+In the past weeks, multiple papers have emerged, discussing the appropriateness of GPT for automated labelling and qualitative coding. Below is a reading list, with some comments for each.
+
+@pangakis seems to be the only article suggesting caution. They suggest that performance is not uniform, depends on prompt quality, idiosincracies of the text data, and the complexity of the constructs. Thus, they recommend always validating against human ratings. They used 27 tasks in 11 datasets.\
+They also introduce the idea of a *consistency score* obtained by repeatedly applying ratings and evaluating distance to the modal response. `temp = .6`
+
+Reiss found negative results.
+
+@kim
+
+@dillion2023
+
+@ziems provides a thorough investigation of LLMs for computational social science.
+
+@sahu
+
+Rathje et al @rathje has probably written the paper closest to the paper I wanted to write. They focus not just on sentiment but also on discrete emotions. They compare the accuracy of LLMs (.66 - .75) to that of LIWC (.20 - .30). It seems like they obtain good results mostly because they are rating simple constructs (sentiment, discrete emotions, and offensiveness) in short texts (mostly tweets)
+
+@ding
+
+@liu
+
+@wang2021
+
+To add: Gilardi (2023), Reiss (2023), He et al (23), Zhu (23)
+
+# Some notes of caution
+
+I wonder if it this is a project worth pursuing. Below is a list of potential problems.
+
+-   While the project seemed like a good idea when it came about, the space has quickly saturated and what seemed like a big contribution has now been covered in parts by the multitude of papers cited here. Thus, the size of the contribution gets smaller by the day.
+-   This is not an **evergreen** research question. Soon GPT-5 will be out and the answers will be outdated. Thus, the relevance of the contribution gets smaller by the day.
+-   It is difficult to find enough datasets that match inclusion criteria.
+
+# Extra notes to self
+- Making every classification binary can be helpful to standardize performance. E.g., don't do multiclass or multilabel classification.
+
+Large language models (LLMs) are neural networks that are trained on massive amounts of text data and can generate natural language in response to various inputs. LLMs have shown remarkable capabilities in natural language understanding and generation tasks, such as question answering, summarization, and text classification. However, most LLMs are trained on data that is predominantly in English, which may limit their ability to handle other languages and domains.
+
+Few-shot learning is a paradigm that aims to leverage the prior knowledge of LLMs to perform new tasks with minimal supervision. In few-shot learning, the LLM is given a few labeled examples of a new task, along with a natural language prompt that describes the task. The LLM then uses its generative power to produce an answer for the task. Few-shot learning has been applied to various natural language processing tasks, such as sentiment analysis, relation extraction, and named entity recognition.
+
+However, few-shot learning with LLMs has not been extensively explored for the task of classifying psychological constructs from open-ended text. Psychological constructs are abstract concepts that are used to describe and measure human behavior and mental processes, such as personality traits, emotions, attitudes, and motivations. Classifying psychological constructs from text is a challenging task that requires a deep understanding of the meaning and context of the text, as well as the theoretical and empirical foundations of the constructs.
+
+Classifying psychological constructs from text has many potential applications in psychology and related fields, such as education, health, and social sciences. For example, classifying text responses to personality questionnaires can help assess individual differences and predict outcomes. Classifying text responses to surveys or interviews can help measure attitudes and opinions on various topics. Classifying text responses to prompts or scenarios can help elicit emotions and motivations.
+
+However, classifying psychological constructs from text also poses several challenges and limitations. First, there is no consensus on the definition and measurement of many psychological constructs, which may lead to ambiguity and inconsistency in the labels. Second, there is often a lack of large-scale labeled data for many psychological constructs, which may limit the performance of supervised learning methods. Third, there may be ethical and social implications of using LLMs to classify psychological constructs from text, such as privacy, bias, and fairness.
+
+Therefore, in this paper, we aim to investigate the following research questions:
+
+- How do LLMs perform in few-shot classification of psychological constructs from open-ended text?
+- How do LLMs compare to human annotators in terms of accuracy and reliability?
+- How do LLMs relate to outcomes such as behavior, performance, or well-being?
+- How do LLMs relate to demographics such as age, gender, or ethnicity? Do LLMs exhibit any bias or discrimination in their classifications?
+
+To answer these questions, we use a set of articles that cover various psychological constructs and domains. We use a standard few-shot learning framework with natural language prompts to classify the text responses into predefined categories. We evaluate the performance of LLMs against human annotators and baseline methods. We also analyze the correlations between LLM classifications and outcomes and demographics.
+
+We hope that this paper will contribute to the literature on few-shot learning with LLMs and provide insights into the potential and limitations of using LLMs for classifying psychological constructs from text.
+
+# References
