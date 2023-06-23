@@ -2,20 +2,25 @@
 title: "Third Year Paper Proposal"
 subtitle: "Large Language Models make human coding in the social sciences obsolete"
 format: pdf
-fontfamily: mathpazo
 fig-cap-location: top
 table-cap-location: bottom
 editor: visual
 self-contained: true
 fontsize: 10pt
 linestretch: 1
-# abstract: Scientific progress in the social sciences has relied, among other tools, on trained raters reading text and categorizing it. We argue that advances in natural language processing, especially the advent of large language models have made this practice obsolete. We show how repeated automatic ratings compared to content expert and externally valid expert ratings of personal qualities in college admissions. Compared to human raters, machine ratings can be more reliable, and orders of magnitude cheaper and faster than human raters. We offer recommendations on how to optimally do this, and provide an R package and tutorial for LLM coding.
 author: Benjamin Lira
-#author: Benjamin Lira, Asaf Mazar, Ben Manning, Chayce Baldwin, Lyle Ungar, David Yeager, James Gross, and Angela Duckworth
 bibliography: references.bib
 link-citations: true
 csl: apa-numeric-superscript.csl
-keep-tex: true
+keep-tex: false
+
+preamble: |
+  \usepackage{enumitem}
+  \usepackage[margin = 0in]{geometry}
+  \usepackage{titlesec}
+  \setlength\bibitemsep{0.0\baselineskip} % Change this value as needed
+  \titleformat{\section}
+  {\normalfont\Large\bfseries\rmfamily}{\thesection}{1em}{}
 ---
 
 # GAP in knowledge
@@ -30,7 +35,7 @@ No data on demographics, so what about bias
 
 What about other languages
 
-Existing tests on publicly available benchmarks may be affected by contamination, that is the tests might be included in the training data for these models [@pangakis].
+Existing tests on publicly available benchmarks may be affected by contamination, that is the tests might be included in the training data for these models @pangakis .
 
 # Research Questions
 
@@ -51,12 +56,12 @@ Existing tests on publicly available benchmarks may be affected by contamination
 
 # Methods
 
-| Tables   |      Are      |  Cool |
-|----------|-------------|------|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-: Fruit prices {tbl-colwidths="[50,25,25]"}
+| Tables   | Are          | Cool   |
+|----------|--------------|--------|
+| col 1 is | left-aligned | \$1600 |
+| col 2 is | centered     | \$12   |
 
+: Fruit prices {tbl-colwidths="\[50,25,25\]"}
 
 # Reading List
 
@@ -65,7 +70,7 @@ In the past weeks, multiple papers have emerged, discussing the appropriateness 
 @pangakis seems to be the only article suggesting caution. They suggest that performance is not uniform, depends on prompt quality, idiosincracies of the text data, and the complexity of the constructs. Thus, they recommend always validating against human ratings. They used 27 tasks in 11 datasets.\
 They also introduce the idea of a *consistency score* obtained by repeatedly applying ratings and evaluating distance to the modal response. `temp = .6`
 
-Reiss found negative results.
+Reiss @reiss found negative results.
 
 @kim
 
@@ -83,7 +88,13 @@ Rathje et al @rathje has probably written the paper closest to the paper I wante
 
 @wang2021
 
-To add: Gilardi (2023), Reiss (2023), He et al (23), Zhu (23)
+@gilardi
+
+@reiss
+
+@he
+
+@zhu
 
 # Some notes of caution
 
@@ -94,7 +105,8 @@ I wonder if it this is a project worth pursuing. Below is a list of potential pr
 -   It is difficult to find enough datasets that match inclusion criteria.
 
 # Extra notes to self
-- Making every classification binary can be helpful to standardize performance. E.g., don't do multiclass or multilabel classification.
+
+-   Making every classification binary can be helpful to standardize performance. E.g., don't do multiclass or multilabel classification.
 
 Large language models (LLMs) are neural networks that are trained on massive amounts of text data and can generate natural language in response to various inputs. LLMs have shown remarkable capabilities in natural language understanding and generation tasks, such as question answering, summarization, and text classification. However, most LLMs are trained on data that is predominantly in English, which may limit their ability to handle other languages and domains.
 
@@ -108,10 +120,10 @@ However, classifying psychological constructs from text also poses several chall
 
 Therefore, in this paper, we aim to investigate the following research questions:
 
-- How do LLMs perform in few-shot classification of psychological constructs from open-ended text?
-- How do LLMs compare to human annotators in terms of accuracy and reliability?
-- How do LLMs relate to outcomes such as behavior, performance, or well-being?
-- How do LLMs relate to demographics such as age, gender, or ethnicity? Do LLMs exhibit any bias or discrimination in their classifications?
+-   How do LLMs perform in few-shot classification of psychological constructs from open-ended text?
+-   How do LLMs compare to human annotators in terms of accuracy and reliability?
+-   How do LLMs relate to outcomes such as behavior, performance, or well-being?
+-   How do LLMs relate to demographics such as age, gender, or ethnicity? Do LLMs exhibit any bias or discrimination in their classifications?
 
 To answer these questions, we use a set of articles that cover various psychological constructs and domains. We use a standard few-shot learning framework with natural language prompts to classify the text responses into predefined categories. We evaluate the performance of LLMs against human annotators and baseline methods. We also analyze the correlations between LLM classifications and outcomes and demographics.
 
