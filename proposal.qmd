@@ -1,7 +1,11 @@
 ---
 title: "Third Year Paper Proposal"
 subtitle: "Large Language Models make human coding in the social sciences obsolete"
-format: pdf
+format: 
+  pdf:
+    documentclass: article
+    classoption: twocolumn
+    fontfamily: times
 fig-cap-location: top
 table-cap-location: bottom
 editor: visual
@@ -13,14 +17,14 @@ bibliography: references.bib
 link-citations: true
 csl: apa-numeric-superscript.csl
 keep-tex: false
-
-preamble: |
-  \usepackage{enumitem}
-  \usepackage[margin = 0in]{geometry}
-  \usepackage{titlesec}
-  \setlength\bibitemsep{0.0\baselineskip} % Change this value as needed
-  \titleformat{\section}
-  {\normalfont\Large\bfseries\rmfamily}{\thesection}{1em}{}
+geometry: margin=0.75in
+# preamble: |
+#   \usepackage{enumitem}
+#   \usepackage[margin = 0in]{geometry}
+#   \usepackage{titlesec}
+#   \setlength\bibitemsep{0.0\baselineskip} % Change this value as needed
+#   \titleformat{\section}
+#   {\normalfont\Large\bfseries\rmfamily}{\thesection}{1em}{}
 ---
 
 # GAP in knowledge
@@ -56,12 +60,6 @@ Existing tests on publicly available benchmarks may be affected by contamination
 
 # Methods
 
-| Tables   | Are          | Cool   |
-|----------|--------------|--------|
-| col 1 is | left-aligned | \$1600 |
-| col 2 is | centered     | \$12   |
-
-: Fruit prices {tbl-colwidths="\[50,25,25\]"}
 
 # Reading List
 
